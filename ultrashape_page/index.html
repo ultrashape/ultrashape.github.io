@@ -1,0 +1,497 @@
+<html lang="en"><head><style type="text/css">
+.anticon {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.anticon > * {
+  line-height: 1;
+}
+
+.anticon svg {
+  display: inline-block;
+}
+
+.anticon::before {
+  display: none;
+}
+
+.anticon .anticon-icon {
+  display: block;
+}
+
+.anticon[tabindex] {
+  cursor: pointer;
+}
+
+.anticon-spin::before,
+.anticon-spin {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}
+
+@-webkit-keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+</style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Research Title</title>
+        <!-- TODO: Replace with UltraShape 1.0 favicon -->
+        <link rel="icon" href="assets/favicon.png">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="window.css">
+        <link rel="stylesheet" href="carousel.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="pv.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        
+        
+        
+		
+		
+        
+        
+    </head>
+    <body>
+        <div style="width: 100%; min-height: 90vh; position: relative; overflow: hidden; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <video autoplay="" playsinline="" loop="" muted="" src="assets/videos/placeholder-bg.mp4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3;"></video>
+            <div style="position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #ffffff; padding: 80px 20px; text-align: center;">
+                <div style="font-size: 72px; font-weight: 600; margin-bottom: 24px; text-shadow: 2px 2px 8px rgba(0,0,0,0.2);">
+                    YOUR RESEARCH NAME
+                </div>
+                <div style="font-size: 28px; font-weight: 300; margin-bottom: 48px; max-width: 800px; line-height: 1.5;">
+                    YOUR RESEARCH SUBTITLE
+                </div>
+                <div style="font-size: 18px; font-weight: 300; margin-bottom: 48px; max-width: 900px; line-height: 1.8; opacity: 0.95;">
+                    [PLACEHOLDER: Your research description here. Describe your key contributions, methods, and results.]
+                </div>
+                <div id="links" style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
+                    <div><a id="paper" href="#paper">Read Research Paper</a></div>
+                    <div><a id="code" href="#code">Code</a></div>
+                    <div><a id="demo" href="#demo">Demo</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: #f8f9fa; padding: 80px 20px;">
+            <div class="pv-video-wrapper" id="videoWrapper" style="max-width: 1200px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.15);">
+                <video class="pv-video-element" id="pvVideo" playsinline="">
+                    <source src="assets/videos/placeholder-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="pv-poster-overlay" style="background-image: url(&quot;assets/images/placeholder-cover.webp&quot;);" id="playTrigger">
+                    <div class="pv-play-btn"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main" style="background: #ffffff;">
+            <div class="x-section-title" style="text-align: center; margin-top: 100px;">Key Features</div>
+
+            <div class="feature-container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+    
+                <!-- 1. Navigation Icons (Row of 4 Squares) -->
+                <div class="feature-tabs" style="margin-bottom: 60px;">
+                    <!-- Tab 1: Yellow -->
+                    <div class="feature-tab">
+                        <!-- Icon: Star/Quality -->
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <span>[Feature 1]</span>
+                    </div>
+
+                    <!-- Tab 2: Red -->
+                    <div class="feature-tab">
+                        <!-- Icon: Cube/Topology -->
+                        <svg viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44A.99.99 0 0 1 12 2c.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9zM12 4.15L6.04 7.5 12 10.85l5.96-3.35L12 4.15zM5 15.91l6 3.38v-6.71L5 9.21v6.7zm14 0v-6.7l-6 3.38v6.71l6-3.38z"></path></svg>
+                        <span>[Feature 2]</span>
+                    </div>
+
+                    <!-- Tab 3: Blue -->
+                    <div class="feature-tab">
+                        <!-- Icon: Palette/Texture -->
+                        <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path></svg>
+                        <span>[Feature 3]</span>
+                    </div>
+
+                    <!-- Tab 4: Purple -->
+                    <div class="feature-tab">
+                        <!-- Icon: Bolt/Speed -->
+                        <svg viewBox="0 0 24 24"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"></path></svg>
+                        <span>[Feature 4]</span>
+                    </div>
+                </div>
+
+                <!-- 2. Content Display Area -->
+                <div class="feature-content-wrapper">
+                    
+                    <!-- Content 1: High Quality -->
+                    <div class="feature-panel">
+                        <div style="font-size: 24px; font-weight: 700; color: #facd5c; margin-bottom: 16px;">
+                            [PLACEHOLDER: Feature Title 1]
+                        </div>
+                        <p style="color: #2a2a2a; font-size: 15px; line-height: 1.6;">
+                            [PLACEHOLDER: Describe your feature here. Explain the key benefits and capabilities.]
+                        </p>
+                        <div style="display: flex; gap: 16px; margin: 0px 16px;">
+                            <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 8px; padding: 12px 16px; text-align: center; flex-grow: 1; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">
+                                <div style="font-size: 24px; font-weight: 700; color: #facd5c; line-height: 1;">3s <span style="font-size: 11px;">(2s+1s)</span></div>
+                                <div style="font-size: 11px; text-transform: uppercase; color: #666; margin-top: 4px; letter-spacing: 0.5px;">[PLACEHOLDER: Resolution/Setting 1]</div>
+                            </div>
+                            <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 8px; padding: 12px 16px; text-align: center; flex-grow: 1; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">
+                                <div style="font-size: 24px; font-weight: 700; color: #facd5c; line-height: 1;">[PLACEHOLDER: Time] <span style="font-size: 11px;">[PLACEHOLDER: Breakdown]</span></div>
+                                <div style="font-size: 11px; text-transform: uppercase; color: #666; margin-top: 4px; letter-spacing: 0.5px;">[PLACEHOLDER: Resolution/Setting 2]</div>
+                            </div>
+                            <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 8px; padding: 12px 16px; text-align: center; flex-grow: 1; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">
+                                <div style="font-size: 24px; font-weight: 700; color: #facd5c; line-height: 1;">[PLACEHOLDER: Time] <span style="font-size: 11px;">[PLACEHOLDER: Breakdown]</span></div>
+                                <div style="font-size: 11px; text-transform: uppercase; color: #666; margin-top: 4px; letter-spacing: 0.5px;">[PLACEHOLDER: Resolution/Setting 3]</div>
+                            </div>
+                        </div>
+                            <div style="color: #666; font-size: 12px; margin: 0px 16px; margin-top: 8px; font-weight: 500;">
+                            [PLACEHOLDER: Add notes or disclaimers about your timing measurements here.]
+                        </div>
+                        <p style="color: #2a2a2a; font-size: 15px; line-height: 1.6;">
+                            [PLACEHOLDER: Additional description of your method or innovation.]
+                        </p>
+                        <div style="margin-top: 16px; border-radius: 8px; overflow: hidden; margin: 0 auto; max-width: 500px; background-color: rgba(0,0,0,0.05); padding: 40px; text-align: center; color: #666;">
+                            <div style="font-size: 14px;">[PLACEHOLDER: Comparison Chart Image]</div>
+                            <div style="font-size: 12px; margin-top: 8px;">placeholder-comparison.png</div>
+                        </div> 
+                        <p style="color: #2a2a2a; font-size: 15px; font-weight: 500; line-height: 1.6; text-align: center; margin-top: 8px">
+                            [PLACEHOLDER: Chart/Image caption]
+                        </p>
+                    </div>
+
+                    <!-- Content 2: Topology -->
+                    <div class="feature-panel">
+                        <div style="font-size: 24px; font-weight: 700; color: #d17969; margin-bottom: 16px;">
+                            [PLACEHOLDER: Feature Title 2]
+                        </div>
+                        <p style="color: #2a2a2a; font-size: 15px; line-height: 1.6; flex-grow: 1;">
+                            [PLACEHOLDER: Describe how your method handles complex structures or challenges.]
+                        </p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-left: 16px; margin-bottom: 16px;">
+                            <div style="background-color: rgba(255, 255, 255, 0.9); border: 1px solid #d17969; color: #d17969; border-radius: 8px; padding: 8px 16px; font-weight: 700; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">✔ [Feature 1]</div>
+                            <div style="background-color: rgba(255, 255, 255, 0.9); border: 1px solid #d17969; color: #d17969; border-radius: 8px; padding: 8px 16px; font-weight: 700; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">✔ [Feature 2]</div>
+                            <div style="background-color: rgba(255, 255, 255, 0.9); border: 1px solid #d17969; color: #d17969; border-radius: 8px; padding: 8px 16px; font-weight: 700; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">✔ [Feature 3]</div>
+                        </div>
+                        <div style="height: 400px; background-color: rgba(255, 255, 255, 0.9); border-radius: 8px; margin: 0 16px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08); display: flex; align-items: center; justify-content: center; color: #666;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 14px;">[PLACEHOLDER: 3D Model or Image]</div>
+                                <div style="font-size: 12px; margin-top: 8px;">placeholder-topology.glb</div>
+                            </div>
+                        </div>
+                        <div style="color: #666; font-size: 12px; margin-top: 8px; margin-left: 16px; font-weight: 500;">
+                            * Mesh is cut to showcase internal structure.
+                        </div>
+                    </div>
+
+                    <!-- Content 3: Texture -->
+                    <div class="feature-panel">
+                        <div style="font-size: 24px; font-weight: 700; color: #60a5fa; margin-bottom: 16px;">
+                            [PLACEHOLDER: Feature Title 3]
+                        </div>
+                        <p style="color: #2a2a2a; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
+                            [PLACEHOLDER: Describe your texture modeling capabilities or features.]
+                        </p>
+                        <div style="border-radius: 8px; overflow: hidden; background-color: rgba(0,0,0,0.05); padding: 40px; text-align: center; color: #666;">
+                            <div style="font-size: 14px;">[PLACEHOLDER: Relighting Example Image]</div>
+                            <div style="font-size: 12px; margin-top: 8px;">placeholder-relighting.webp</div>
+                        </div>
+                    </div>
+
+                    <!-- Content 4: Minimalist -->
+                    <div class="feature-panel">
+                        <div style="font-size: 24px; font-weight: 700; color: #b7a5ff; margin-bottom: 16px;">
+                            [PLACEHOLDER: Feature Title 4]
+                        </div>
+                        <p style="color: #2a2a2a; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
+                            Data processing for training and inference are simple, enabling instant conversions that are fully
+                            rendering-free and optimization-free.
+                        </p>
+                        <div style="display: flex; flex-direction: column; gap: 16px; margin: 0px 16px;">
+                        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 8px; padding: 12px 16px; text-align: center; flex-grow: 1; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">
+                            <div style="font-size: 24px; font-weight: 700; color: #b7a5ff; line-height: 1;">&lt; 10s <span style="font-size: 14px;">on single CPU</span></div>
+                            <div style="font-size: 11px; text-transform: uppercase; color: #666; margin-top: 4px; letter-spacing: 0.5px;">[PLACEHOLDER: Process Name]</div>
+                        </div>
+                        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 8px; padding: 12px 16px; text-align: center; flex-grow: 1; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">
+                            <div style="font-size: 24px; font-weight: 700; color: #b7a5ff; line-height: 1;">&lt; 100ms <span style="font-size: 14px;">with CUDA acceleration</span></div>
+                            <div style="font-size: 11px; text-transform: uppercase; color: #666; margin-top: 4px; letter-spacing: 0.5px;">[PLACEHOLDER: Process Name]</div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="x-section-title">Image to 3D Asset Generation</div>
+
+                        </div>
+                        <div style="color: #666; font-size: 12px; margin-top: 8px; margin-left: 16px; font-weight: 500;">
+                            * Mesh is cut to showcase internal structure.
+                        </div>
+                    </div>
+
+                    <!-- Content 3: Texture -->
+                    <div class="feature-panel">
+                        <div style="font-size: 24px; font-weight: 700; color: #60a5fa; margin-bottom: 16px;">
+                            [PLACEHOLDER: Feature Title 3]
+                        </div>
+                        <p style="color: #2a2a2a; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
+                            Our method can model arbitrary surface attributes such as
+                            Base Color, Roughness, Metallic, and Opacity (i.e., Transparency or Alpha channel), enabling Physically Based Rendering (PBR) and photorealistic relighting.
+                        </p>
+                        <div style="border-radius: 8px; overflow: hidden; background-color: rgba(0,0,0,0.05); padding: 40px; text-align: center; color: #666;">
+                            <div style="font-size: 14px;">[PLACEHOLDER: Relighting Example Image]</div>
+                            <div style="font-size: 12px; margin-top: 8px;">placeholder-relighting.webp</div>
+                        </div>
+                    </div>
+
+                    <!-- Content 4: Minimalist -->
+                    <div class="feature-panel">
+                        <div style="font-size: 24px; font-weight: 700; color: #b7a5ff; margin-bottom: 16px;">
+                            [PLACEHOLDER: Feature Title 4]
+                        </div>
+                        <p style="color: #2a2a2a; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
+                            Data processing for training and inference are simple, enabling instant conversions that are fully
+                            rendering-free and optimization-free.
+                        </p>
+                        <div style="display: flex; flex-direction: column; gap: 16px; margin: 0px 16px;">
+                        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 8px; padding: 12px 16px; text-align: center; flex-grow: 1; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">
+                            <div style="font-size: 24px; font-weight: 700; color: #b7a5ff; line-height: 1;">&lt; 10s <span style="font-size: 14px;">on single CPU</span></div>
+                            <div style="font-size: 11px; text-transform: uppercase; color: #666; margin-top: 4px; letter-spacing: 0.5px;">[PLACEHOLDER: Process Name]</div>
+                        </div>
+                        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 8px; padding: 12px 16px; text-align: center; flex-grow: 1; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">
+                            <div style="font-size: 24px; font-weight: 700; color: #b7a5ff; line-height: 1;">&lt; 100ms <span style="font-size: 14px;">with CUDA acceleration</span></div>
+                            <div style="font-size: 11px; text-transform: uppercase; color: #666; margin-top: 4px; letter-spacing: 0.5px;">[PLACEHOLDER: Process Name]</div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="x-section-title">Image to 3D Asset Generation</div>
+            <div id="results-gen"><div class="x-carousel-tags"><div class="x-carousel-tag active">All</div><div class="x-carousel-tag">Detailed</div><div class="x-carousel-tag">Organic</div><div class="x-carousel-tag">Character</div><div class="x-carousel-tag">Scene</div><div class="x-carousel-tag">Thin Geometry</div><div class="x-carousel-tag">Transparent</div><div class="x-carousel-tag">Hard Surface</div><div class="x-carousel-tag">Open Surface</div><div class="x-carousel-tag">Interior Structure</div><div class="x-carousel-tag">Rich Material</div></div><div class="x-carousel-slider"><div class="x-carousel-slider-item" style="flex-basis: calc(100% / 1);"><div class="x-card" style="height: 70vh" )'="">
+                <div class="x-button" style="position: absolute; top: 10px; right: 10px">View GLB</div>
+                <div style="max-width: 100%; max-height: 100%; aspect-ratio: 1; pointer-events: none; background-color: rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; color: #666;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 14px;">[PLACEHOLDER: Generation Video]</div>
+                        <div style="font-size: 12px; margin-top: 8px;">placeholder-generation.mp4</div>
+                    </div>
+                </div>
+                <div class="caption" style="width: 200px;">
+                    <div class="x-image-prompt" style="background-color: rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; color: #666;">
+                        <div style="text-align: center; font-size: 12px;">[PLACEHOLDER IMAGE]</div>
+                    </div>
+                    <span style="margin-top: 8px; font-weight: 600;">
+                        Input Prompt
+                    </span>
+                </div>
+            </div></div></div><div class="x-carousel-nav"><div class="x-carousel-switch">&lt;</div><div class="x-carousel-pages"><div class="x-carousel-page x-carousel-page-active"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div></div><div class="x-carousel-switch">&gt;</div></div></div>
+
+            <div class="x-section-title" style="text-align: center; margin-top: 100px;">[PLACEHOLDER: Section Title 2]</div>
+            <div id="results-recon" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;"><div class="x-carousel-slider"><div class="x-carousel-slider-item" style="flex-basis: calc(100% / 1);"><div class="x-card" style="height: 70vh" )'="">
+                <div style="max-width: 100%; max-height: 100%; aspect-ratio: 1; pointer-events: none; background-color: rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; color: #666;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 14px;">[PLACEHOLDER: Reconstruction Video]</div>
+                        <div style="font-size: 12px; margin-top: 8px;">placeholder-reconstruction.mp4</div>
+                    </div>
+                </div>
+            </div></div></div><div class="x-carousel-nav"><div class="x-carousel-switch">&lt;</div><div class="x-carousel-pages"><div class="x-carousel-page x-carousel-page-active"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div><div class="x-carousel-page"></div></div><div class="x-carousel-switch">&gt;</div></div></div>
+
+
+            <div class="x-section-title" style="text-align: center; margin-top: 100px;">[PLACEHOLDER: Section Title 3]</div>
+
+            <!-- 1. Overview Section -->
+            <div style="margin-bottom: 40px; margin: 0 16px;">
+                <div style="width: 100%; background-color: rgba(0,0,0,0.05); padding: 60px 20px; text-align: center; color: #666; border-radius: 8px;">
+                    <div style="font-size: 14px;">[PLACEHOLDER: Pipeline Overview Image]</div>
+                    <div style="font-size: 12px; margin-top: 8px;">placeholder-overview.jpg</div>
+                </div>
+                <p style="font-size: 18px; margin-top: 24px; margin-left: auto; margin-right: auto;">
+                    [PLACEHOLDER: Describe your pipeline here. Explain the key steps and methods used in your research.]
+                </p>
+            </div>
+
+            <!-- 2. Feature Section (Card Style) -->
+            <div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 20px; padding: 48px; display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 48px; max-width: 1200px; margin: 40px auto; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);">
+                
+                <div style="flex: 1; min-width: 250px; display: flex; justify-content: center; align-items: center; background-color: rgba(0,0,0,0.05); padding: 40px; border-radius: 8px; color: #666;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 14px;">[PLACEHOLDER IMAGE]</div>
+                        <div style="font-size: 12px; margin-top: 8px;">placeholder-feature1.png</div>
+                    </div>
+                </div>
+
+                <!-- Right: Text -->
+                <div style="flex: 10; min-width: 300px; font-size: 15px;">
+                    <div style="margin-top: 0; margin-bottom: 20px; font-size: 24px; color: #2a2a2a;">
+                        [PLACEHOLDER: Feature Name]
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        [PLACEHOLDER: Describe your key feature or innovation here.]
+                    </div>
+                    
+                    <!-- Styled List Items -->
+                    <!-- Geometry Block -->
+                    <div style="display: flex; gap: 16px; align-items: flex-start;">
+                        <div style="background-color: rgba(34, 197, 94, 0.3); color: #4ade80; font-weight: 700; padding: 6px 12px; border-radius: 8px; font-size: 12px; letter-spacing: 1px;">[TAG]</div>
+                        <div>
+                            <span style="color: #2a2a2a; font-weight: 500; display: block; margin-bottom: 4px;">[PLACEHOLDER: Component Name]</span> 
+                            <span style="font-size: 15px;">[PLACEHOLDER: Description of this component.]</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Appearance Block -->
+                    <div style="display: flex; gap: 16px; align-items: flex-start;">
+                        <div style="background-color: rgba(59, 130, 246, 0.3); color: #60a5fa; font-weight: 700; padding: 6px 12px; border-radius: 8px; font-size: 12px; letter-spacing: 1px;">[TAG]</div>
+                        <div>
+                            <span style="color: #2a2a2a; font-weight: 500; display: block; margin-bottom: 4px;">[PLACEHOLDER: Component Name]</span> 
+                            <span style="font-size: 15px;">[PLACEHOLDER: Description of this component.]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. VAE Section (Card Style) -->
+            <div style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); border-radius: 20px; padding: 48px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px; max-width: 1200px; margin: 40px auto; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);">
+                
+                <!-- Left: Text -->
+                <div style="flex: 10; min-width: 300px; font-size: 15px;">
+                    <div style="margin-top: 0; margin-bottom: 20px; font-size: 24px; color: #2a2a2a;">
+                        [PLACEHOLDER: Method Name]
+                    </div>
+                    
+                    <div>
+                        [PLACEHOLDER: Describe your method or technique here.]
+                    </div>
+
+                    <!-- Stat Blocks Effect -->
+                    <div style="display: flex; gap: 16px; margin: 20px 0;">
+                        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 8px; padding: 12px 20px; text-align: center; flex-grow: 1; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">
+                            <div style="font-size: 24px; font-weight: 700; color: #eec88e; line-height: 1;">[PLACEHOLDER: Metric 1]</div>
+                            <div style="font-size: 11px; text-transform: uppercase; color: #666; margin-top: 4px; letter-spacing: 0.5px;">[PLACEHOLDER: Metric Label 1]</div>
+                        </div>
+                        <div style="background-color: rgba(255, 255, 255, 0.9); border-radius: 8px; padding: 12px 20px; text-align: center; flex-grow: 1; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);">
+                            <div style="font-size: 24px; font-weight: 700; color: #eec88e; line-height: 1;">[PLACEHOLDER: Metric 2]</div>
+                            <div style="font-size: 11px; text-transform: uppercase; color: #666; margin-top: 4px; letter-spacing: 0.5px;">[PLACEHOLDER: Metric Label 2]</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        [PLACEHOLDER: Describe how your method achieves compression or efficiency.]
+                    </div>
+                </div>
+
+                <div style="flex: 1; min-width: 300px; display: flex; justify-content: center; align-items: center; background-color: rgba(0,0,0,0.05); padding: 40px; border-radius: 8px; color: #666;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 14px;">[PLACEHOLDER IMAGE]</div>
+                        <div style="font-size: 12px; margin-top: 8px;">placeholder-feature2.png</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="x-small-header" style="margin-top: 100px; text-align: center;">Authors</div>
+            <div>
+                <!-- PLACEHOLDER: Add your authors here -->
+                <div class="author-info">
+                    <div style="flex: 1 0 0; text-align: right;">
+                        <a class="author-link" href="#author1">[Author Name 1]</a>
+                    </div>
+                    <div style="flex: 1 0 0; text-align: left; color: rgba(42, 42, 42, 0.7);">
+                        <span class="affiliation-link" href="#affiliation1">[Affiliation 1]</span>
+                    </div>
+                </div>
+                <!-- Add more authors as needed -->
+            </div>
+            <div class="x-small-header" style="text-align: center;">Citation</div>
+            <div class="bibtex-entry">
+                <div class="line">
+                    <span class="value">@article{your2025research,</span>
+                </div>
+                <div class="line">
+                    <span class="key">    title={</span>
+                    <span class="value">[PLACEHOLDER: Your Research Title]},</span>
+                </div>
+                <div class="line">
+                    <span class="key">    author={</span>
+                    <span class="value">[PLACEHOLDER: Author Names]},</span>
+                </div>
+                <div class="line">
+                    <span class="key">    journal={</span>
+                    <span class="value">[PLACEHOLDER: Journal/Conference Name]},</span>
+                </div>
+                <div class="line">
+                    <span class="key">    year={</span>
+                    <span class="value">[PLACEHOLDER: Year]}</span>
+                </div>
+                <div class="line">}</div>
+            </div>
+
+            <div class="x-small-header" style="text-align: center;">Responsible AI Considerations</div>
+            <p class="x-note">
+                [PLACEHOLDER: Responsible AI considerations and dataset information for your research.]
+            </p>
+            <div class="x-small-header" style="text-align: center;">Material Disclaimer</div>
+            <p class="x-note">
+                [PLACEHOLDER: Material disclaimer and contact information for your research.]
+            </p>
+
+            <div style="height: 100px;"> </div>
+
+        </div>
+
+        
+        <div id="bottombar">
+            <div class="row">
+                <div><span>[YOUR RESEARCH NAME]:</span> [Your Research Subtitle]</div>
+                <div style="display: flex; flex-direction: row; gap: 12px; flex-wrap: wrap; align-items: center;">
+                    <a href="#contact">Contact Us</a>
+                    <span style="width: 1px; height: 16px; background-color: rgba(255, 255, 255, 0.3);"></span>
+                    <a href="#privacy">Privacy Policy</a>
+                    <span style="width: 1px; height: 16px; background-color: rgba(255, 255, 255, 0.3);"></span>
+                    <a href="#terms">Terms of Use</a>
+                    <span style="width: 1px; height: 16px; background-color: rgba(255, 255, 255, 0.3);"></span>
+                    <span>© 2025 [Your Institution/Name]</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Scroll Down Indicator -->
+        <div id="scroll-indicator" class="scroll-indicator">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 13l5 5 5-5"></path>
+            </svg>
+        </div>
+
+    <div id="fullscreen">
+        <div id="window">
+            <div id="close">✕</div>
+            <div id="content"></div>
+        </div>
+    </div>
+    </body></html>
